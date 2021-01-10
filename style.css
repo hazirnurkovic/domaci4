@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.forma {
+  background-color: purple;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+
+input[type="text"] {
+  padding: 6px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 7px;
+}
+
+::placeholder {
+  color: white !important;
+}
+
+.form-control:focus {
+  border-color: lightgreen;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7) inset,
+    0px 0px 10px rgba(255, 100, 255, 0.8);
+}
+
+.btn {
+  background-color: #ffb95c;
+}

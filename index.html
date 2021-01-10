@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="./fontawesome/css/all.css">
+  	<link rel="stylesheet" href="style.css">
+	<title>Lista zelja</title>
+</head>
+<body style="background-image: url('./images/background.jpg');">
+
+	<div class="container mt-5">
+		<div class="forma">
+			<form method="POST" action="sacuvaj_zelju.php">
+
+				<input class="form-control bg-warning" type="text" name="ime" placeholder="Ime">		
+				<input class="form-control mt-3 bg-info" type="text" name="prezime" placeholder="Prezime">
+
+				<select class="form-control mt-3 bg-primary text-white" name="izabrano">
+					<option value="Rozaje">Rozaje</option>
+					<option value="Plav">Plav</option>
+					<option value="Andrijevica">Andrijevica</option>
+				</select>
+				
+				<label class="form-control mt-3 bg-danger text-white">Da li si bio/la dobar?</label>
+				
+				<label for="Da" class="checkbox-inline text-white">Da</label>
+				<input type="checkbox" name="da_ne" id="Da" value="Da">
+
+				<label for="Ne" class="checkbox-inline ml-4 text-primary">Ne</label>
+				<input type="checkbox" name="da_ne" id="Ne" value="Ne">
+
+				<textarea class="form-control mt-3 bg-success text-white" id="zelje" name="zelje" placeholder="Unesi zelje" rows="3"></textarea>
+
+				<button type="submit" class="btn mt-3 form-control">Potvrdi</button>
+				<div id="greska" class="text-danger mt-2"></div>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  	<script src="provjeraURL.js"></script>
+</body>
+</html>

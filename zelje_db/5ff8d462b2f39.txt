@@ -1,0 +1,1 @@
+{"ime":"Hazir","prezime":"Nurkovic","izabrano":"Rozaje","da_ne":"Da","zelje":"Da, nakon zavrsene akademije, postanem dio Amplitudo 'familije' "}
